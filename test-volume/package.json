@@ -1,0 +1,22 @@
+{
+  "name": "test-volume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lambda functions for volume testing the interoperability service",
+  "main": "stats.js",
+  "scripts": {
+    "test:volume": "env-cmd -f .env node index.js"
+  },
+  "dependencies": {
+    "@nearform/sql": "^1.4.0",
+    "aws-sdk": "^2.777.0",
+    "node-fetch": "^2.6.1",
+    "node-jose": "^2.0.0",
+    "p-times": "^3.0.0",
+    "pg": "^8.4.2",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
